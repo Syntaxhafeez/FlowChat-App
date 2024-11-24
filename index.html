@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="http://localhost:8000/socket.io/socket.io.js"></script>
+  <title>FlowChat App</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="FlowChat-logo.png" type="image/png">
+</head>
+<body>
+  <div class="chat-container">
+    <div class="chat-header">
+      <img src="FlowChat-logo.png" alt="App Logo" class="app-logo">
+      <h2>FlowChat</h2>
+    </div>
+    <div class="chat-box container" id="messageContainer">
+      <!-- Messages will be added here -->
+    </div>
+    <form class="chat-input" id="send-container">
+      <input type="text" id="messageInp" placeholder="Type a message" autocomplete="off">
+      <button id="send-button" type="submit">Send</button>
+    </form>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
