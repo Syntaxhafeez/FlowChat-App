@@ -1,5 +1,4 @@
-// Automatically set the correct connection URL for frontend (Vercel or local)
-const socket = io(window.location.hostname === 'localhost' ? 'http://localhost:8000' : 'https://flow-chat-app-one.vercel.app/');
+const socket = io('http://localhost:8000');
 
 const form = document.getElementById('send-container');
 const messageInput = document.getElementById('messageInp');

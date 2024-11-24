@@ -1,4 +1,4 @@
-const io = require('socket.io')(8000, {cors: {origin: "*",  methods: ['GET', 'POST']},});
+const io = require('socket.io')(8000, {cors: {origin: "*",},});
 
 const users = {};
 
@@ -23,6 +23,3 @@ io.on('connection', socket => {
         }
     });
 });
-
-const PORT = process.env.PORT || 8000; // Use Render's provided PORT or fallback to 8000 for local
-io.listen(PORT, () => console.log(`Server running on port ${PORT}`));
