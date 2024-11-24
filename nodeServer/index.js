@@ -23,3 +23,6 @@ io.on('connection', socket => {
         }
     });
 });
+
+const PORT = process.env.PORT || 8000; // Use Render's provided PORT or fallback to 8000 for local
+io.listen(PORT, () => console.log(`Server running on port ${PORT}`));
